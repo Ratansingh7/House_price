@@ -1,0 +1,118 @@
+{
+  "ranges": {
+    "area_sqft": {
+      "label": "Living area",
+      "unit": "sq ft",
+      "min": 480,
+      "max": 4852,
+      "step": 10,
+      "default": 1800
+    },
+    "bedrooms": {
+      "label": "Bedrooms",
+      "unit": "",
+      "min": 1,
+      "max": 8,
+      "step": 1,
+      "default": 3
+    },
+    "bathrooms": {
+      "label": "Bathrooms",
+      "unit": "",
+      "min": 1.0,
+      "max": 6.0,
+      "step": 0.5,
+      "default": 2.0
+    },
+    "age": {
+      "label": "Age of house",
+      "unit": "yrs",
+      "min": 0,
+      "max": 96,
+      "step": 1,
+      "default": 20
+    },
+    "floors": {
+      "label": "Floors",
+      "unit": "",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2
+    },
+    "garage": {
+      "label": "Garage spaces",
+      "unit": "",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+    "lot_size_sqft": {
+      "label": "Lot size",
+      "unit": "sq ft",
+      "min": 1200,
+      "max": 19395,
+      "step": 50,
+      "default": 7000
+    },
+    "overall_quality": {
+      "label": "Build quality",
+      "unit": "/10",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 5
+    },
+    "crime_rate": {
+      "label": "Area crime rate",
+      "unit": "0-1",
+      "min": 0.0,
+      "max": 0.65,
+      "step": 0.01,
+      "default": 0.2
+    },
+    "school_rating": {
+      "label": "Schools",
+      "unit": "/10",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 6
+    },
+    "distance_to_cbd": {
+      "label": "Distance to city centre",
+      "unit": "km",
+      "min": 0.0,
+      "max": 45.0,
+      "step": 0.5,
+      "default": 8.0
+    }
+  },
+  "toggles": {
+    "has_pool": "Swimming pool",
+    "has_basement": "Basement",
+    "air_conditioning": "Air conditioning",
+    "furnished": "Furnished",
+    "main_road": "On a main road"
+  },
+  "choices": {
+    "neighborhood": [
+      "Northwood",
+      "Riverside",
+      "Oakridge",
+      "Downtown",
+      "Hillcrest",
+      "Lakeview",
+      "Maplewood",
+      "Sunnyvale",
+      "Brookfield",
+      "Cedar Park"
+    ],
+    "renovation": [
+      "Not_Renovated",
+      "Partial",
+      "Full"
+    ]
+  }
+}

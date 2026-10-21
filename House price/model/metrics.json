@@ -1,0 +1,142 @@
+{
+  "model": "GradientBoosting",
+  "trained_at": "2026-10-21T23:29:48",
+  "n_samples": 12000,
+  "n_features": 18,
+  "test": {
+    "rmse": 7588.712720412698,
+    "mae": 4261.996176058459,
+    "r2": 0.9673176822007624,
+    "mape": 8.930076142619544
+  },
+  "train": {
+    "rmse": 3318.7665724485155,
+    "mae": 2057.1096927725757,
+    "r2": 0.9929632531644229,
+    "mape": 4.489890237460525
+  },
+  "cv": {
+    "RandomForest": {
+      "cv_rmse": 13641.735907506005,
+      "cv_std": 675.5175721042973
+    },
+    "GradientBoosting": {
+      "cv_rmse": 7323.639660773956,
+      "cv_std": 604.406023373725
+    },
+    "RidgeLog": {
+      "cv_rmse": 11624.745692948745,
+      "cv_std": 813.4065225382866
+    }
+  },
+  "feature_importance": {
+    "age": 0.9667749614496348,
+    "area_sqft": 0.7348058781195048,
+    "distance_to_cbd": 0.08505450283219262,
+    "neighborhood": 0.0799887329016941,
+    "bedrooms": 0.05827842726221433,
+    "overall_quality": 0.034875102263380996,
+    "school_rating": 0.020324013534631404,
+    "garage": 0.009764148058700762,
+    "floors": 0.006611133940682068,
+    "main_road": 0.005970319928527279,
+    "renovation": 0.005863235804483957,
+    "bathrooms": 0.005848482615135864,
+    "has_basement": 0.005418878233676261,
+    "crime_rate": 0.004772445424815164,
+    "air_conditioning": 0.0042216006922636716,
+    "has_pool": 0.0033085226800188662,
+    "furnished": 0.0008043010700061748,
+    "lot_size_sqft": -2.0524211445493988e-06
+  },
+  "price_stats": {
+    "min": 988.0,
+    "max": 394610.0,
+    "mean": 46902.1235,
+    "median": 35316.0
+  },
+  "prediction_band": {
+    "rel_q10": -0.13162435020159063,
+    "rel_q90": 0.1531486038992869,
+    "rel_p05": -0.1684638793205374,
+    "rel_p95": 0.20318190792574156,
+    "log_std": 0.11222328101455314
+  },
+  "neighborhood_stats": {
+    "Brookfield": {
+      "count": 1078,
+      "mean": 40177.0,
+      "median": 30873.0,
+      "min": 1655.0,
+      "max": 281492.0
+    },
+    "Cedar Park": {
+      "count": 1127,
+      "mean": 35569.0,
+      "median": 27461.0,
+      "min": 1716.0,
+      "max": 261622.0
+    },
+    "Downtown": {
+      "count": 1080,
+      "mean": 56854.0,
+      "median": 43779.0,
+      "min": 2616.0,
+      "max": 394610.0
+    },
+    "Hillcrest": {
+      "count": 1158,
+      "mean": 52086.0,
+      "median": 40854.0,
+      "min": 2390.0,
+      "max": 375752.0
+    },
+    "Lakeview": {
+      "count": 1327,
+      "mean": 49659.0,
+      "median": 37223.0,
+      "min": 988.0,
+      "max": 294958.0
+    },
+    "Maplewood": {
+      "count": 1167,
+      "mean": 39420.0,
+      "median": 30223.0,
+      "min": 1887.0,
+      "max": 313693.0
+    },
+    "Northwood": {
+      "count": 1235,
+      "mean": 56776.0,
+      "median": 42779.0,
+      "min": 1947.0,
+      "max": 352323.0
+    },
+    "Oakridge": {
+      "count": 1296,
+      "mean": 46966.0,
+      "median": 36002.0,
+      "min": 1724.0,
+      "max": 265571.0
+    },
+    "Riverside": {
+      "count": 1317,
+      "mean": 51655.0,
+      "median": 40429.0,
+      "min": 2206.0,
+      "max": 324973.0
+    },
+    "Sunnyvale": {
+      "count": 1215,
+      "mean": 38513.0,
+      "median": 29267.0,
+      "min": 1583.0,
+      "max": 223485.0
+    }
+  },
+  "images": {
+    "actual_vs_pred": "static/img/actual_vs_pred.png",
+    "residuals": "static/img/residuals.png",
+    "feature_importance": "static/img/feature_importance.png"
+  }
+}
